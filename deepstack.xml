@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/extremeshok/unraid-repository/master/deepstack.xml</TemplateURL>
+  <Beta>True</Beta>
+  <Category>HomeAutomation: MediaApp:Photos MediaServer:Photos MediaApp:Video MediaServer:Video Tools:Utilities</Category>
+  <Name>deepstack</Name>
+  <Description>
+    [b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
+    DeepStack is an AI server that empowers every developer in the world to easily build state-of-the-art AI systems.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/datastore[/b] This path is used as a datastore for the application.[br]
+    [b][u][span style='color: #E80000;']Documentation[/span][/u][/b][br]
+    https://python.deepstack.cc[br][br]
+  </Description>
+  <Overview>
+    DeepStack is an AI server that empowers every developer in the world to easily build state-of-the-art AI systems. The object detection API locates and classifies 80 different kinds of objects in a single image. The scene recognition api classifies an image into one of 365 scenes. The face detection API detects faces and returns their coordinates. It functions similarly to the face recognition API except that it does not perform recognition.
+  </Overview>
+  <Support>https://clients.extremeshok.com</Support>
+  <Registry>https://registry.hub.docker.com/r/deepquestai/deepstack/</Registry>
+  <Repository>deepquestai/deepstack</Repository>
+  <Project>https://deepstack.cc</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5000</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>VISION-DETECTION</Name>
+      <Value>True</Value>
+      <Description>True, enables the object detection APIs</Description>
+    </Variable>
+    <Variable>
+      <Name>VISION-SCENE</Name>
+      <Value>False</Value>
+      <Description>True, enables the scene detection APIs</Description>
+    </Variable>
+    <Variable>
+      <Name>VISION-FACE</Name>
+      <Value>False</Value>
+      <Description>True, enables the face recognition APIs</Description>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/data</HostDir>
+      <ContainerDir>/datastore</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:5000]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/extremeshok/unraid-repository/master/deepstack/icons/deepstack.png</Icon>
+  <DonateText>If you found this useful, please consider a small donation</DonateText>
+  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E6F7REMYU8DM2&source=url</DonateLink>
+  <DonateImg>https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif</DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
