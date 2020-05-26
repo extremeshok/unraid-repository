@@ -17,7 +17,7 @@
   <Overview>
     Note: Only supports NVIDIA gpus, the GPU needs to be dedicated to deepstack. The GPU cannot be shared with other dockers (ie used for transcoding). DeepStack is an AI server that empowers every developer in the world to easily build state-of-the-art AI systems. The object detection API locates and classifies 80 different kinds of objects in a single image. The scene recognition api classifies an image into one of 365 scenes. The face detection API detects faces and returns their coordinates. It functions similarly to the face recognition API except that it does not perform recognition.
   </Overview>
-  <Support>https://clients.extremeshok.com</Support>
+  <Support>https://extremeshok.com</Support>
   <Registry>https://registry.hub.docker.com/r/deepquestai/deepstack/</Registry>
   <Repository>deepquestai/deepstack:gpu</Repository>
   <Project>https://deepstack.cc</Project>
@@ -58,7 +58,7 @@
     </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:5000]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/extremeshok/unraid-repository/master/deepstack/icons/deepstack.png</Icon>
+  <Icon>https://raw.githubusercontent.com/extremeshok/unraid-repository/master/icons/deepstack.png</Icon>
   <DonateText>If you found this useful, please consider a small donation</DonateText>
   <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E6F7REMYU8DM2&source=url</DonateLink>
   <DonateImg>https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif</DonateImg>
